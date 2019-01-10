@@ -1,3 +1,51 @@
-<p>
-  navbar works!
-</p>
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark nav-color indigo fixed-top scrolling-navbar">
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-light"
+        mdbWavesEffect
+        routerLink="/"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light"
+        mdbWavesEffect
+        routerLink="/ofertas"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Ofertas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light"
+        mdbWavesEffect
+        routerLink="/carta"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >La Carta</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <!-- social icon -->
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="https://www.facebook.com/Pizzeria-%C3%91am-%C3%91am-404541813020446/" target="_blank" class="nav-link"><mdb-icon icon="facebook" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="https://api.whatsapp.com/send?phone=+34616594036" target="_blank" class="nav-link"><mdb-icon icon="whatsapp" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="https://m.me/Pizzeria-%C3%91am-%C3%91am-404541813020446/" target="_blank" class="nav-link"><mdb-icon icon="comments" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+    </ul>
+    <!-- social icon -->
+
+
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->

@@ -1,0 +1,8 @@
+.main-footer {
+  background-color: var(--mainColor);
+}
+
+.main-footer p {
+  font-size: 1.2em;
+  color: #000;
+}

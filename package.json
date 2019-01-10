@@ -1,6 +1,13 @@
 {
   "name": "app-pizza-mdb",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Pizzeria Familiar Ñam Ñam",
+  "homepage": "https://pizzeriafamiliarñamñam.com",
+  "author": {
+    "name": "Luis Alberto Arana Montaño",
+    "url": "https://luisalberto.ml",
+    "email": "disconluis@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,7 +26,11 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "angular-bootstrap-md": "^7.2.0",
+    "chart.js": "^2.5.0",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
+    "hammerjs": "^2.0.8",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

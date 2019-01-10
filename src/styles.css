@@ -32,11 +32,6 @@ h6 {
   margin: 0;
 }
 
-.container--basic {
-  width: 100%;
-  margin: auto;
-}
-
 .container--flex {
   display: flex;
   flex-wrap: wrap;
@@ -48,30 +43,22 @@ h6 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1fr);
+  grid-gap: 10px;
 }
 
 .column {
   width: 100%;
 }
 
-.column__title {
+.column__title, .title__card {
   font-size: 2.1em;
   font-family: 'Dancing Script', Courier, monospace;
   font-weight: bold;
   color: var(--secColor);
 }
 
-.boton {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  width: 120px;
-  background-color: var(--mainColor);
-  color: #FFF;
-  padding: 10px;
-  margin: 10px auto;
-  z-index: 1000;
-  border-radius: 15px;
+.title__card {
+  font-size: 1.5em;
 }
 
 .btn__ofertas {
@@ -81,6 +68,7 @@ h6 {
   color: #FFF;
   transform: translate(-50%, -50%);
   font-size: 1.5em;
+  z-index: 1000;
 }
 
 .boton:hover {
@@ -92,7 +80,6 @@ h6 {
 
 /* -------------Estilos del banner------------- */
 .banner {
-  /* margin-top: -15px; */
   position: relative;
 }
 
@@ -107,7 +94,6 @@ h6 {
 }
 
 .banner__img {
-  width: 100%;
   object-fit: cover;
 }
 
@@ -115,7 +101,7 @@ h6 {
 
 @media screen and (min-width:480px) {
   .banner {
-    margin-top: -200px;
+    margin-top: -150px;
     z-index: -10;
   }
 
@@ -145,6 +131,14 @@ h6 {
 }
 
 @media screen and (min-width:768px) {
+  .banner {
+    margin-top: -190px;
+  }
+
+  .banner__img {
+    height: 300px;
+  }
+
   .column--50-25 {
     width: 24.5%;
   }
@@ -160,15 +154,16 @@ h6 {
 
 @media screen and (min-width:1024px) {
   .banner {
-    margin-top: -100px;
+    margin-top: -200px;
   }
-  .banner__content {
-    font-size: 2.5em;
+
+  .banner__img {
+    height: 350px;
   }
 }
 
 @media screen and (min-width:1600px) {
-  .container--basic {
-    width: 1400px;
+  .banner__img {
+    height: 400px;
   }
 }

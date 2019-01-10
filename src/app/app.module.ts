@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './views/home/home.component';
 import { CartaComponent } from './views/carta/carta.component';
 import { OfertasComponent } from './views/ofertas/ofertas.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { OfertasComponent } from './views/ofertas/ofertas.component';
     HeaderComponent,
     HomeComponent,
     CartaComponent,
-    OfertasComponent
+    OfertasComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

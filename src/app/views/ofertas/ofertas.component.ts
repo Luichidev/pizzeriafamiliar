@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import ofertas from 'src/app/models/ofertas';
+
 
 @Component({
   selector: 'app-ofertas',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ofertas.component.css']
 })
 export class OfertasComponent implements OnInit {
+
+  ofertas: any[] = ofertas
 
   constructor() { }
 

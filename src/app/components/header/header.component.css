@@ -22,9 +22,10 @@
   color: #FFF;
 }
 
-.main-header__contactInfo__address {
+.main-header__contactInfo__address a{
   padding: 10px;
   margin: 0;
+  color: #000;
 }
 
 @media screen and (min-width:480px) {
@@ -40,7 +41,7 @@
     background: none;
   }
 
-  .main-header__contactInfo__address {
+  .main-header__contactInfo__address a {
     color: #FFF;
     padding-top: 0;
   }

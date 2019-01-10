@@ -1,8 +1,33 @@
 <app-navbar></app-navbar>
-<div class="p-5">
+<div class="pt-5">
   <app-header></app-header>
 </div>
 <section class="banner">
-  <img src="./assets/img/portada-pizza.jpg" alt="" class="banner__img">
-  <a href="#" routerLink="/ofertas" class="boton banner__ofertas">OFERTAS</a>
+  <img src="./assets/img/portada-ofertas.jpg" alt="" class="banner__img">
+</section>
+<section class="container--grid pt-3">
+  <mdb-card cascade="true" narrower="true" *ngFor="let oferta of ofertas">
+    <!--Card image-->
+    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+      <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"></mdb-card-img>
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!--/Card image-->
+    <mdb-card-body cascade="true" class="text-center">
+      <!--Card content-->
+      <h5 class="pink-text">
+        {{ oferta.precio }} <i class="fa fa-euro"></i></h5>
+      <!--Title-->
+      <h4 class="card-title">{{ oferta.title }}</h4>
+      <!--Text-->
+      <mdb-card-text>
+        {{ oferta.description }}
+      </mdb-card-text>
+      <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>Pedir</a>
+    </mdb-card-body>
+    <!--/.Card content-->
+  </mdb-card>
+  <!--/.Card-->
 </section>

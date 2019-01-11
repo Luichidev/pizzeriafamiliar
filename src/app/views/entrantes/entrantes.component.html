@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="pt-5">
+  <app-header></app-header>
+</div>
+<section class="banner">
+  <img src="./assets/img/portada-entrantes.jpg" alt="" class="banner__img">
+</section>
+
+<section>
+  <h2 class="column__title text-center pt-4 pb-3">Entrantes</h2>
+  <div class="container--grid-carta">
+    <mdb-card cascade="true" narrower="true" *ngFor="let snack of entrantes">
+      <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+        <mdb-card-img [src]="snack.img"></mdb-card-img>
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <mdb-card-body cascade="true" class="text-center">
+        <h6 class="pink-text">
+          <i class="fa fa-cutlery"></i> {{ snack.category }}</h6>
+        <h4 class="card-title title__card">{{ snack.title }}</h4>
+        <mdb-card-text>
+          {{ snack.description }}
+        </mdb-card-text>
+        <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>{{ snack.buttonText}}</a>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</section>
+<section>
+  <h2 class="column__title text-center pt-4 pb-3">Pastas</h2>
+  <!-- <div class="container--grid-carta">
+    <mdb-card cascade="true" narrower="true" *ngFor="let pizzaE of pizzasEspeciales">
+      <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+        <mdb-card-img [src]="pizzaE.img"></mdb-card-img>
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <mdb-card-body cascade="true" class="text-center">
+        <h6 class="pink-text">
+          <i class="fa fa-cutlery"></i> {{ pizzaE.category }}</h6>
+        <h4 class="card-title title__card">{{ pizzaE.title }}</h4>
+        <mdb-card-text>
+          {{ pizzaE.description }}
+        </mdb-card-text>
+        <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>{{ pizzaE.buttonText}}</a>
+      </mdb-card-body>
+    </mdb-card>
+  </div> -->
+</section>

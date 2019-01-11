@@ -11,6 +11,7 @@ import { HomeComponent } from './views/home/home.component';
 import { PizzasComponent } from './views/pizzas/pizzas.component';
 import { OfertasComponent } from './views/ofertas/ofertas.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { EntrantesComponent } from './views/entrantes/entrantes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     HomeComponent,
     PizzasComponent,
     OfertasComponent,
-    CarouselComponent
+    CarouselComponent,
+    EntrantesComponent
   ],
   imports: [
     BrowserModule,

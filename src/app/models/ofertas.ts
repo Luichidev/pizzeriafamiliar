@@ -1,30 +1,36 @@
 const ofertas = [
   {
+    image: 'assets/img/ofertas/little-pizza.jpg',
     title: 'PIZZA PERSONAL Y BEBIDA',
     precio: '5',
     description: 'No incluye 4 Estaciones'
   },
   {
+    image: 'assets/img/ofertas/dos-pizzas.jpeg',
     title: 'DOS PIZZAS MEDIANAS Y BEBIDA',
     precio: '20',
     description: 'Pizzas especiales 2€ más'
   },
   {
+    image: 'assets/img/ofertas/tres-pizzas.jpeg',
     title: 'TRES PIZZAS MEDIANAS',
     precio: '25',
     description: 'No incluye pizzas especiales'
   },
   {
-    title: 'PIZZA MEDIANA DE LUNES A JUEVES',
+    image: 'assets/img/ofertas/mediana-pizza.jpeg',
+    title: 'PIZZA MEDIANA',
     precio: '8',
-    description: 'A recoger en el local'
+    description: 'Lunes a jueves, a recoger en el local'
   },
   {
+    image: 'assets/img/ofertas/menu-dos.jpeg',
     title: 'MENU PARA DOS',
     precio: '16,50',
     description: 'incluye: Pizza mediana, entrante, bebida y postre'
   },
   {
+    image: 'assets/img/ofertas/menu-tres.jpg',
     title: 'MENU PARA TRES',
     precio: '18,50',
     description: 'Pizza grande, entrante y bebida'

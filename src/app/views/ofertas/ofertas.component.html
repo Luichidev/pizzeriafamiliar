@@ -9,7 +9,7 @@
   <mdb-card cascade="true" narrower="true" *ngFor="let oferta of ofertas">
     <!--Card image-->
     <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-      <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"></mdb-card-img>
+      <mdb-card-img [src]="oferta.image"></mdb-card-img>
       <a>
         <div class="mask rgba-white-slight"></div>
       </a>

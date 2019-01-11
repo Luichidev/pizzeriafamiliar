@@ -3,11 +3,11 @@ import tradicionales from 'src/app/models/pizzas-tradicionales';
 import especiales from 'src/app/models/pizzas-especiales';
 
 @Component({
-  selector: 'app-carta',
-  templateUrl: './carta.component.html',
-  styleUrls: ['./carta.component.css']
+  selector: 'app-pizzas',
+  templateUrl: './pizzas.component.html',
+  styleUrls: ['./pizzas.component.css']
 })
-export class CartaComponent implements OnInit {
+export class PizzasComponent implements OnInit {
 
   pizzas : any[] = tradicionales
   pizzasEspeciales : any[] = especiales

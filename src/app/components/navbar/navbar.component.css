@@ -1,10 +1,13 @@
 .menu__link:hover {
-  background-color: var(--mainColor);
+  background-color: var(--secColor);
+  border-radius: 5px;
 }
 
 .menu__link--select {
-  background-color: var(--mainColor);
+  background-color: var(--secColor);
+  border-radius: 5px;
 }
+
 
 .top-nav-collapse {
   background: rgba(0, 0, 0, .7) !important;

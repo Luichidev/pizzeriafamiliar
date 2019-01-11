@@ -1,9 +1,52 @@
 <app-navbar></app-navbar>
-<div class="p-5">
+<div class="pt-5">
   <app-header></app-header>
 </div>
 <section class="banner">
   <img src="./assets/img/portada-carta.jpg" alt="" class="banner__img">
-  <a href="#" routerLink="/ofertas" class="boton banner__ofertas">OFERTAS</a>
 </section>
 
+<section>
+  <h2 class="column__title text-center pt-4 pb-3">Pizzas Tradicionales</h2>
+  <div class="container--grid-carta">
+    <mdb-card cascade="true" narrower="true" *ngFor="let pizza of pizzas">
+      <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+        <mdb-card-img [src]="pizza.img"></mdb-card-img>
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <mdb-card-body cascade="true" class="text-center">
+        <h6 class="pink-text">
+            <i class="fa fa-cutlery"></i> {{ pizza.category }}</h6>
+        <h4 class="card-title title__card">{{ pizza.title }}</h4>
+        <mdb-card-text>
+          {{ pizza.description }}
+        </mdb-card-text>
+        <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>{{ pizza.buttonText}}</a>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</section>
+<section>
+  <h2 class="column__title text-center pt-4 pb-3">Pizzas Especiales</h2>
+  <div class="container--grid-carta">
+    <mdb-card cascade="true" narrower="true" *ngFor="let pizzaE of pizzasEspeciales">
+      <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+        <mdb-card-img [src]="pizzaE.img"></mdb-card-img>
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <mdb-card-body cascade="true" class="text-center">
+        <h6 class="pink-text">
+            <i class="fa fa-cutlery"></i> {{ pizzaE.category }}</h6>
+        <h4 class="card-title title__card">{{ pizzaE.title }}</h4>
+        <mdb-card-text>
+          {{ pizzaE.description }}
+        </mdb-card-text>
+        <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>{{ pizzaE.buttonText}}</a>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</section>

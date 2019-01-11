@@ -101,6 +101,36 @@ h6 {
   object-fit: cover;
 }
 
+/* -------------Estilos controles del carousel------------ */
+.controls-top {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.controls-top a {
+  background: var(--secColor);
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.2em;
+  text-align: center;
+  height: 40px;
+  padding: 5px;
+  width: 40px;
+}
+
+.carousel-indicators li {
+  background: var(--secColor);
+}
+
+.carousel-indicators li.active {
+  background: var(--mainColor);
+  width: 15px;
+  height: 15px;
+}
+
+.carousel {
+  height: 520px;
+}
 /* -------------Estilos responsive------------- */
 
 @media screen and (min-width:480px) {
@@ -115,6 +145,7 @@ h6 {
 
   .btn__ofertas {
     display: none;
+    z-index: -1000;
   }
 
   .container--grid, .container--grid-carta {
@@ -161,6 +192,10 @@ h6 {
 
   .column__title {
     font-size: 1.9em;
+  }
+
+  .title__card {
+    font-size: 1.2em;
   }
 }
 

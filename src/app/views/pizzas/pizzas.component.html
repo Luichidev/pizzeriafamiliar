@@ -40,9 +40,9 @@
   </div>
 </div>
 
-<section>
+<section class="container">
   <h2 class="column__title text-center pt-4 pb-3">Pizzas Tradicionales</h2>
-  <div class="container--grid-carta">
+  <div class="container--grid">
     <mdb-card cascade="true" narrower="true" *ngFor="let pizza of pizzas">
       <div class="view view-cascade overlay waves-light" mdbWavesEffect>
         <mdb-card-img [src]="pizza.img"></mdb-card-img>
@@ -63,9 +63,9 @@
     </mdb-card>
   </div>
 </section>
-<section>
+<section class="container">
   <h2 class="column__title text-center pt-4 pb-3">Pizzas Especiales</h2>
-  <div class="container--grid-carta">
+  <div class="container--grid">
     <mdb-card cascade="true" narrower="true" *ngFor="let pizzaE of pizzasEspeciales">
       <div class="view view-cascade overlay waves-light" mdbWavesEffect>
         <mdb-card-img [src]="pizzaE.img"></mdb-card-img>

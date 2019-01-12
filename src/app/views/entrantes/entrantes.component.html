@@ -40,9 +40,9 @@
   </div>
 </div>
 
-<section>
+<section class="container">
   <h2 class="column__title text-center pt-4 pb-3">Entrantes</h2>
-  <div class="container--grid-carta">
+  <div class="container--grid">
     <mdb-card cascade="true" narrower="true" *ngFor="let snack of entrantes">
       <div class="view view-cascade overlay waves-light" mdbWavesEffect>
         <mdb-card-img [src]="snack.img"></mdb-card-img>
@@ -62,9 +62,9 @@
     </mdb-card>
   </div>
 </section>
-<section>
+<section class="container">
   <h2 class="column__title text-center pt-4 pb-3">Pastas</h2>
-  <div class="container--grid-carta">
+  <div class="container--grid">
     <mdb-card cascade="true" narrower="true" *ngFor="let pasta of pastas">
       <div class="view view-cascade overlay waves-light" mdbWavesEffect>
         <mdb-card-img [src]="pasta.img"></mdb-card-img>

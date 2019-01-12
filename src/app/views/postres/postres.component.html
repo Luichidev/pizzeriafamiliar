@@ -14,12 +14,10 @@
       <!--Header-->
       <div class="modal-header">
         <p class="heading lead">Pedidos a Domicilio o a Recoger en el local</p>
-
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
           <span aria-hidden="true" class="white-text">&times;</span>
         </button>
       </div>
-
       <!--Body-->
       <div class="modal-body">
         <div class="text-center">
@@ -27,10 +25,8 @@
           <p>Para realizar un pedido tienes que llamar a cualquiera de nuestros numeros:</p>
           <p><a href="tel:616594036">Movil: 616 594 036</a></p>
           <p><a href="tel:931153111">Fijo: 931 153 111</a></p>
-
         </div>
       </div>
-
       <!--Footer-->
       <div class="modal-footer justify-content-center">
         <a type="button" href="tel:931153111" mdbBtn color="warning" class="waves-light" mdbWavesEffect> <i class="fa fa-phone mr-1"></i>
@@ -44,9 +40,9 @@
   </div>
 </div>
 
-<section>
+<section class="container">
   <h2 class="column__title text-center pt-4 pb-3">Postres y Bebidas</h2>
-  <div class="container--grid-carta">
+  <div class="container--grid">
     <mdb-card cascade="true" narrower="true" *ngFor="let postre of postres">
       <div class="view view-cascade overlay waves-light" mdbWavesEffect>
         <mdb-card-img [src]="postre.img"></mdb-card-img>

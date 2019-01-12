@@ -83,10 +83,6 @@ h6 {
 }
 
 /* -------------Estilos del navbar custom scroll ------------- */
-.black {
-  background-color: rgba(0, 0, 0, .7) !important;
-}
-
 .top-nav-collapse {
   background-color: #000 !important;
 }

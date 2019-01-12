@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import entrantes from 'src/app/models/entrantes';
+import pastas from 'src/app/models/pastas';
 
 @Component({
   selector: 'app-entrantes',
@@ -9,6 +10,7 @@ import entrantes from 'src/app/models/entrantes';
 export class EntrantesComponent implements OnInit {
 
   entrantes : any[] = entrantes
+  pastas : any[] = pastas
 
   constructor() { }
 

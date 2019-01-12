@@ -8,16 +8,16 @@ const entrantes = [
   },
   {
     title: 'Salteñas',
-    img: 'assets/img/entrantes/entrantes-empanadillas.jpg',
+    img: 'assets/img/entrantes/entrantes-salteñas.jpg',
     category: 'Entrantes',
     description:'Masa dulce rellena de pollo',
     buttonText: 'Pedir'
   },
   {
     title: 'Crujientes',
-    img: 'assets/img/entrantes/entrantes-empanadillas.jpg',
+    img: 'assets/img/entrantes/entrantes-pollo.jpg',
     category: 'Entrantes',
-    description:'Pollo crujiente: 4U.',
+    description:'Pollo crujiente: 4_Unidades.',
     buttonText: 'Pedir'
   },
   {
@@ -31,28 +31,28 @@ const entrantes = [
     title: 'Alitas de pollo',
     img: 'assets/img/entrantes/entrantes-alitas.jpg',
     category: 'Entrantes',
-    description:'Pequeña 6€, Mediana 10€, Grande 15€',
+    description:'Alitas picantes 5_Unidades.',
     buttonText: 'Pedir'
   },
   {
     title: 'Nuggets',
-    img: 'assets/img/entrantes/entrantes-provolones.jpg',
+    img: 'assets/img/entrantes/entrantes-nuggets.jpg',
     category: 'Entrantes',
-    description:'Nuggets de pollo: 5U.',
+    description:'Nuggets de pollo: 5_Unidades.',
     buttonText: 'Pedir'
   },
   {
     title: 'Fritas',
-    img: 'assets/img/entrantes/entrantes-provolones.jpg',
+    img: 'assets/img/entrantes/entrantes-fritas.jpg',
     category: 'Entrantes',
-    description:'Patatas fritas',
+    description:'Patatas fritas con ketchup.',
     buttonText: 'Pedir'
   },
   {
     title: 'Bravas',
-    img: 'assets/img/entrantes/entrantes-provolones.jpg',
+    img: 'assets/img/entrantes/entrantes-bravas.jpg',
     category: 'Entrantes',
-    description:'Patatas Bravas con all i oli',
+    description:'Patatas Bravas con all i oli.',
     buttonText: 'Pedir'
   },
   {
@@ -71,7 +71,7 @@ const entrantes = [
   },
   {
     title: 'Pan de Ajo',
-    img: 'assets/img/entrantes/entrantes-provolones.jpg',
+    img: 'assets/img/entrantes/entrantes-pandeajo.jpg',
     category: 'Entrantes',
     description:'5 Unidades',
     buttonText: 'Pedir'

@@ -17,4 +17,7 @@ export class EntrantesComponent implements OnInit {
   ngOnInit() {
   }
 
+  onOpen(event: any) {
+    console.log(event)
+  }
 }

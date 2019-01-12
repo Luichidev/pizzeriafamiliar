@@ -17,4 +17,7 @@ export class PizzasComponent implements OnInit {
   ngOnInit() {
   }
 
+  onOpen(event: any) {
+    console.log(event)
+  }
 }

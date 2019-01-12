@@ -25,4 +25,8 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
     this.slides = this.chunk(this.cards, 3)
   }
+
+  onOpen(event: any) {
+    console.log(event)
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import postres from 'src/app/models/postres';
 
 @Component({
   selector: 'app-postres',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostresComponent implements OnInit {
 
+  postres : any[] = postres
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onOpen(event: any) {
+    console.log(event)
   }
 
 }

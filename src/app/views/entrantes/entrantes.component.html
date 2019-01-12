@@ -6,6 +6,40 @@
   <img src="./assets/img/portada-entrantes.jpg" alt="" class="banner__img">
 </section>
 
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" (open)="onOpen($event)">
+  <div class="modal-dialog modal-notify modal-warning" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Pedidos a Domicilio o a Recoger en el local</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>Para realizar un pedido tienes que llamar a cualquiera de nuestros numeros:</p>
+          <p><a href="tel:616594036">Movil: 616 594 036</a></p>
+          <p><a href="tel:931153111">Fijo: 931 153 111</a></p>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" href="tel:931153111" mdbBtn color="warning" class="waves-light" mdbWavesEffect> <i class="fa fa-phone mr-1"></i>
+          LLamar ahora!
+        </a>
+        <a type="button" mdbBtn color="warning" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()"
+          data-dismiss="modal">No, después</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
 <section>
   <h2 class="column__title text-center pt-4 pb-3">Entrantes</h2>
   <div class="container--grid-carta">
@@ -23,7 +57,7 @@
         <mdb-card-text>
           {{ snack.description }}
         </mdb-card-text>
-        <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>{{ snack.buttonText}}</a>
+        <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()" mdbWavesEffect>{{ snack.buttonText }}</button>
       </mdb-card-body>
     </mdb-card>
   </div>
@@ -45,7 +79,7 @@
         <mdb-card-text>
           {{ pasta.description }}
         </mdb-card-text>
-        <a href="tel:93115311" class="btn btn-red waves-light" mdbWavesEffect>{{ pasta.buttonText}}</a>
+        <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()" mdbWavesEffect>{{ pasta.buttonText }}</button>
       </mdb-card-body>
     </mdb-card>
   </div>

@@ -1,3 +1,68 @@
-<p>
-  postres works!
-</p>
+<app-navbar></app-navbar>
+<div class="pt-5">
+  <app-header></app-header>
+</div>
+<section class="banner">
+  <img src="./assets/img/portada-postres.jpg" alt="" class="banner__img">
+</section>
+
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" (open)="onOpen($event)">
+  <div class="modal-dialog modal-notify modal-warning" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Pedidos a Domicilio o a Recoger en el local</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>Para realizar un pedido tienes que llamar a cualquiera de nuestros numeros:</p>
+          <p><a href="tel:616594036">Movil: 616 594 036</a></p>
+          <p><a href="tel:931153111">Fijo: 931 153 111</a></p>
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" href="tel:931153111" mdbBtn color="warning" class="waves-light" mdbWavesEffect> <i class="fa fa-phone mr-1"></i>
+          LLamar ahora!
+        </a>
+        <a type="button" mdbBtn color="warning" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()"
+          data-dismiss="modal">No, después</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<section>
+  <h2 class="column__title text-center pt-4 pb-3">Postres y Bebidas</h2>
+  <div class="container--grid-carta">
+    <mdb-card cascade="true" narrower="true" *ngFor="let postre of postres">
+      <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+        <mdb-card-img [src]="postre.img"></mdb-card-img>
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <mdb-card-body cascade="true" class="text-center">
+        <h6 class="pink-text">
+          <i class="fa fa-cutlery"></i> {{ postre.category }}</h6>
+        <h4 class="card-title title__card">{{ postre.title }}</h4>
+        <mdb-card-text>
+          {{ postre.description }}
+        </mdb-card-text>
+        <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()" mdbWavesEffect>{{ postre.buttonText }}</button>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</section>

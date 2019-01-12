@@ -16,4 +16,8 @@ export class OfertasComponent implements OnInit {
   ngOnInit() {
   }
 
+  onOpen(event: any) {
+    console.log(event)
+  }
+
 }

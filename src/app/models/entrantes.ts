@@ -24,7 +24,7 @@ const entrantes = [
     title: 'Provolones',
     img: 'assets/img/entrantes/entrantes-provolones.jpg',
     category: 'Entrantes',
-    description:'Pequeña 6€, Mediana 10€, Grande 15€',
+    description:'Palitos de provolones de queso',
     buttonText: 'Pedir'
   },
   {
@@ -59,7 +59,7 @@ const entrantes = [
     title: 'Croquetas',
     img: 'assets/img/entrantes/entrantes-croquetas.jpg',
     category: 'Entrantes',
-    description:'Pequeña 6€, Mediana 10€, Grande 15€',
+    description:'Croquetas de Jamon 5_Unidades',
     buttonText: 'Pedir'
   },
   {

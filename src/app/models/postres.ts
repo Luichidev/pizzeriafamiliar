@@ -24,14 +24,14 @@ const postres = [
     title: 'Brownie',
     img: 'assets/img/postres-bebidas/postres-brownie.jpg',
     category: 'Postres',
-    description:'Delicioso Brownie de chocolate',
+    description:'Delicioso Brownie de Chocolate',
     buttonText: 'Pedir'
   },
   {
     title: 'Trufas',
     img: 'assets/img/postres-bebidas/postres-trufas.jpg',
     category: 'Postres',
-    description:'Trufas de cholate 3_Unidades',
+    description:'Trufas de chocolate 3_Unidades',
     buttonText: 'Pedir'
   },
   {
@@ -43,14 +43,14 @@ const postres = [
   },
   {
     title: 'Cerveza',
-    img: 'assets/img/postres-bebidas/latas.jpg',
+    img: 'assets/img/postres-bebidas/cervezas.jpg',
     category: 'Bebidas',
-    description:'Xibeca, Estrella de lata',
+    description:'Xibeca, Estrella de lata, Heineken de lata',
     buttonText: 'Pedir'
   },
   {
     title: 'Lambrusco',
-    img: 'assets/img/postres-bebidas/latas.jpg',
+    img: 'assets/img/postres-bebidas/lambrusco.jpg',
     category: 'Bebidas',
     description:'Lambrusco fresco botella 750 ml',
     buttonText: 'Pedir'

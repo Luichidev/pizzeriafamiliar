@@ -6,25 +6,25 @@ const ofertas = [
     description: 'No incluye 4 Estaciones'
   },
   {
-    image: 'assets/img/ofertas/dos-pizzas.jpeg',
+    image: 'assets/img/ofertas/dos-pizzas.jpg',
     title: 'DOS PIZZAS MEDIANAS Y BEBIDA',
     precio: '20',
     description: 'Pizzas especiales 2€ más'
   },
   {
-    image: 'assets/img/ofertas/tres-pizzas.jpeg',
+    image: 'assets/img/ofertas/tres-pizzas.jpg',
     title: 'TRES PIZZAS MEDIANAS',
     precio: '25',
     description: 'No incluye pizzas especiales'
   },
   {
-    image: 'assets/img/ofertas/mediana-pizza.jpeg',
+    image: 'assets/img/ofertas/mediana-pizza.jpg',
     title: 'PIZZA MEDIANA',
     precio: '8',
     description: 'Lunes a jueves, a recoger en el local'
   },
   {
-    image: 'assets/img/ofertas/menu-dos.jpeg',
+    image: 'assets/img/ofertas/menu-dos.jpg',
     title: 'MENU PARA DOS',
     precio: '16,50',
     description: 'incluye: Pizza mediana, entrante, bebida y postre'

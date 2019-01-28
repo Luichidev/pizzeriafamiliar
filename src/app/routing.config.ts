@@ -13,5 +13,4 @@ export const routes: Routes = [
   {path: 'pizzas', component: PizzasComponent},
   {path: 'entrantes', component: EntrantesComponent},
   {path: 'postres', component: PostresComponent},
-
 ];

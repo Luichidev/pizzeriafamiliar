@@ -1,16 +1,9 @@
 const ofertas = [
   {
-    image: 'assets/img/ofertas/little-pizza.jpg',
-    title: 'PIZZA PERSONAL',
-    precio: '5',
-    description: 'más refresco de lata de Domingo a Jueves, ver más abajo las opciones',
-    textLittle: true
-  },
-  {
     image: 'assets/img/ofertas/dos-pizzas.jpg',
     title: 'DOS PIZZAS MEDIANAS',
     precio: '20',
-    description: 'más Bebida de 1 litro, Incluye pizzas especiales',
+    description: 'más Bebida de 1 Litro, Incluye pizzas especiales',
     textLittle: false
   },
   {
@@ -38,8 +31,15 @@ const ofertas = [
     image: 'assets/img/ofertas/menu-tres.jpg',
     title: 'MENU PARA TRES',
     precio: '18,50',
-    description: 'Pizza grande, entrante y Refresco de 1 litro',
+    description: 'Pizza grande, entrante y Refresco de 1 Litro',
     textLittle: false
+  },
+  {
+    image: 'assets/img/ofertas/little-pizza.jpg',
+    title: 'PIZZA PERSONAL',
+    precio: '5',
+    description: 'más refresco de lata de Domingo a Jueves, ver más abajo las opciones',
+    textLittle: true
   }
 ]
 

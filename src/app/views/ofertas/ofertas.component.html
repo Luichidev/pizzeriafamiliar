@@ -40,6 +40,7 @@
   </div>
 </div>
 
+<h2 class="column__title text-center pt-4 pb-3">Ofertas</h2>
 <section class="container container--grid pt-3">
   <mdb-card cascade="true" narrower="true" *ngFor="let oferta of ofertas">
     <!--Card image-->
@@ -59,6 +60,7 @@
       <!--Text-->
       <mdb-card-text>
         {{ oferta.description }}
+        <span class="text-danger font-weight-bold" *ngIf="oferta.textLittle">*</span>
       </mdb-card-text>
       <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()" mdbWavesEffect>Pedir</button>
     </mdb-card-body>
@@ -66,3 +68,14 @@
   </mdb-card>
   <!--/.Card-->
 </section>
+<div class="container">
+  <p class="pt-4"><span class="text-danger">*</span> La oferta <span class="text-danger">Pizza personal</span>, la oferta <span class="text-danger">Pizza Mediana a 8€</span> a recoger en el local, la oferta <span class="text-danger">Tres pizzas x 25€</span>, No es valido en vigilias y días festivos.</p>
+  <p><span class="text-danger">*</span> La Oferta <span class="text-danger">Pizza personal</span> solo incluye:</p>
+  <ul>
+    <li>Pizza de Jamón</li>
+    <li>Pizza de Bacon</li>
+    <li>Pizza de Atún</li>
+    <li>Pizza de 4 Quesos</li>
+    <li>Pizza de Alemana</li>
+  </ul>
+</div>

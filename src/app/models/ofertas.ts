@@ -3,7 +3,7 @@ const ofertas = [
     image: 'assets/img/ofertas/dos-pizzas.jpg',
     title: 'DOS PIZZAS MEDIANAS',
     precio: '20',
-    description: 'más Bebida de 1 Litro, Incluye pizzas especiales',
+    description: 'más refresco de 1 Litro',
     textLittle: false
   },
   {
@@ -24,7 +24,7 @@ const ofertas = [
     image: 'assets/img/ofertas/menu-dos.jpg',
     title: 'MENU PARA DOS',
     precio: '15',
-    description: 'Pizza mediana, entrante y 2 latas de refresco',
+    description: 'Pizza mediana, un entrante y 2 latas de refresco',
     textLittle: false
   },
   {

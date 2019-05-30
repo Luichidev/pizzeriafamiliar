@@ -13,6 +13,8 @@ import { OfertasComponent } from './views/ofertas/ofertas.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { EntrantesComponent } from './views/entrantes/entrantes.component';
 import { PostresComponent } from './views/postres/postres.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { PostresComponent } from './views/postres/postres.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],

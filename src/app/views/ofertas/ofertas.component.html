@@ -60,16 +60,17 @@
       <!--Text-->
       <mdb-card-text>
         {{ oferta.description }}
-        <span class="text-danger font-weight-bold" *ngIf="oferta.textLittle">*</span>
       </mdb-card-text>
       <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()" mdbWavesEffect>Pedir</button>
     </mdb-card-body>
+    <div class="card-footer text-danger text-center" *ngIf="oferta.textLittle">
+      <small>* Esta oferta no es valida en vigilias y días festivos.</small>
+    </div>
     <!--/.Card content-->
   </mdb-card>
   <!--/.Card-->
 </section>
-<div class="container">
-  <p class="pt-4"><span class="text-danger">*</span> La oferta <span class="text-danger">Pizza personal</span>, la oferta <span class="text-danger">Pizza Mediana a 8€</span> a recoger en el local, la oferta <span class="text-danger">Tres pizzas x 25€</span>, No es valido en vigilias y días festivos.</p>
+<div class="container pt-3">
   <p><span class="text-danger">*</span> La Oferta <span class="text-danger">Pizza personal</span> solo incluye:</p>
   <ul>
     <li>Pizza de Jamón</li>

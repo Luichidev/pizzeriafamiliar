@@ -7,7 +7,7 @@ const tradicionales = [
     buttonText: 'Pedir'
   },
   {
-    title: 'Jamon',
+    title: 'Jamon y Champiñones',
     img: 'assets/img/pizzas/pizza-jamon-york.jpg',
     category: 'Tradicionales',
     description:'Pequeña 6€, Mediana 10€, Grande 15€',
@@ -86,6 +86,13 @@ const tradicionales = [
   {
     title: '4 Estaciones',
     img: 'assets/img/pizzas/pizza-4-estaciones.jpg',
+    category: 'Tradicionales',
+    description:'Pequeña 6€, Mediana 10€, Grande 15€',
+    buttonText: 'Pedir'
+  },
+  {
+    title: 'Atún y Cebolla',
+    img: 'assets/img/pizzas/pizza-atun-cebolla.jpg',
     category: 'Tradicionales',
     description:'Pequeña 6€, Mediana 10€, Grande 15€',
     buttonText: 'Pedir'

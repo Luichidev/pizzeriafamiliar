@@ -1,6 +1,6 @@
 const especiales = [
   {
-    title: 'Jamon',
+    title: 'Jamon de Serrano',
     img: 'assets/img/pizzas/pizza-jamon-serrano.jpg',
     category: 'Especiales',
     description:'Pequeña 8€, Mediana 12€, Grande 18€',

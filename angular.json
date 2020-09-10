@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "app-pizza-MDB"
+  "defaultProject": "app-pizza-MDB",
+  "cli": {
+    "analytics": false
+  }
 }

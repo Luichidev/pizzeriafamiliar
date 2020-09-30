@@ -6,8 +6,8 @@
   <img src="./assets/img/portada-carta.jpg" alt="" class="banner__img">
 </section>
 
-<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true" (open)="onOpen($event)">
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true" (open)="onOpen($event)">
   <div class="modal-dialog modal-notify modal-warning" role="document">
     <!--Content-->
     <div class="modal-content">
@@ -29,11 +29,12 @@
       </div>
       <!--Footer-->
       <div class="modal-footer justify-content-center">
-        <a type="button" href="tel:931153111" mdbBtn color="warning" class="waves-light" mdbWavesEffect> <i class="fa fa-phone mr-1"></i>
+        <a type="button" href="tel:931153111" mdbBtn color="warning" class="waves-light" mdbWavesEffect> <i
+            class="fa fa-phone mr-1"></i>
           LLamar ahora!
         </a>
-        <a type="button" mdbBtn color="warning" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()"
-          data-dismiss="modal">No, después</a>
+        <a type="button" mdbBtn color="warning" outline="true" class="waves-effect" mdbWavesEffect
+          (click)="frame.hide()" data-dismiss="modal">No, después</a>
       </div>
     </div>
     <!--/.Content-->
@@ -55,7 +56,10 @@
           <i class="fa fa-cutlery"></i> {{ pizza.category }}</h6>
         <h4 class="card-title title__card">{{ pizza.title }}</h4>
         <mdb-card-text>
-          {{ pizza.description }}
+          {{ pizza.ingredients}} <br>
+          <strong>
+            {{ pizza.description }}
+          </strong>
         </mdb-card-text>
         <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample"
           (click)="frame.show()" mdbWavesEffect>{{ pizza.buttonText }}</button>
@@ -78,7 +82,10 @@
           <i class="fa fa-cutlery"></i> {{ pizzaE.category }}</h6>
         <h4 class="card-title title__card">{{ pizzaE.title }}</h4>
         <mdb-card-text>
-          {{ pizzaE.description }}
+          {{ pizzaE.ingredients }} <br>
+          <strong>
+            {{ pizzaE.description }}
+          </strong>
         </mdb-card-text>
         <button type="button" mdbBtn color="danger" rounded="true" data-toggle="modal" data-target="#basicExample"
           (click)="frame.show()" mdbWavesEffect>{{ pizzaE.buttonText }}</button>
